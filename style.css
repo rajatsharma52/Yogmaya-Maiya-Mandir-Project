@@ -125,7 +125,7 @@
 @media screen and (max-width: 768px) {
   .nav-container {
       /* padding: 0 1rem; */
-      gap: 60px;
+      gap: 50px;
   }
 
   .nav-title {
