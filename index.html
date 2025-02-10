@@ -11,28 +11,27 @@
 <body>
   <nav class="navbar">
     <div class="nav-container">
-        <div class="nav-brand">
-            <img src="Logo.png" alt="Temple Logo" class="temple-logo" />
-            <a href="#" class="nav-title" id="tit">Shree Yogmaya Janamsthan</a>
-        </div>
-
-        <button class="menu-toggle" id="menuToggle">
-            <span class="hamburger"></span>
-        </button>
-
-        <div class="nav-menu" id="navMenu">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#location" class="nav-link">Location</a>
-            <a href="#nearby" class="nav-link">Nearby Places</a>
-            <a href="#seva" class="nav-link">Sevas</a>
-            <a href="#sanatan" class="nav-link">Sanatan Goswami</a>
-            <a href="#management" class="nav-link">Management</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </div>
+      <div class="nav-brand">
+        <img src="Logo.png" alt="Temple Logo" class="temple-logo" />
+        <a href="#" class="nav-title" id="tit">Shree Yogmaya Janamsthan</a>
+      </div>
+      
+          <button class="menu-toggle" id="menuToggle">
+            <div class="hamburger"></div>
+          </button>
+  
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#location" class="nav-link">Location</a>
+        <a href="#nearby" class="nav-link">Nearby Places</a>
+        <a href="#seva" class="nav-link">Sevas</a>
+        <a href="#sanatan" class="nav-link">Sanatan Goswami</a>
+        <a href="#management" class="nav-link">Management</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
     </div>
-</nav>
-
+  </nav>
   
   
 <script>
@@ -42,18 +41,19 @@
 
     menuToggle.addEventListener("click", function (event) {
         navMenu.classList.toggle("active");
-        menuToggle.classList.toggle("active");
+        menuToggle.classList.toggle("active"); // Toggles 'X' animation
         event.stopPropagation();
     });
 
-    // Close menu when clicking outside
+    // Close menu when clicking anywhere outside
     document.addEventListener("click", function (event) {
         if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
             navMenu.classList.remove("active");
-            menuToggle.classList.remove("active");
+            menuToggle.classList.remove("active"); // Resets icon
         }
     });
 });
+
 
 </script>
 
@@ -210,7 +210,7 @@
         <div class="management-info">
           <h3>पंडित संदीप मिश्र</h3>
           <div class="contact-details">
-            <pre><i data-lucide="phone">+91-6397318874</i> </pre>
+            <pre><i data-lucide="phone"></i> +91-6397318874</pre>
             <p><i data-lucide="mail"></i> yogmayamandir512@gmail.com</p>
             <p><i data-lucide="map-pin"></i>Paniya Dhaal, Mahaban, Mathura - 281305</p>
           </div>
