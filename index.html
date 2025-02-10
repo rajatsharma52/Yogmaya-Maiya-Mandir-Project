@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prachin Yogmaya Temple</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">
+            <img src="Logo.png" alt="Temple Logo" class="temple-logo" />
+            <a href="#" class="nav-title" id="tit">Shree Yogmaya Janamsthan</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+            <span class="hamburger"></span>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#location" class="nav-link">Location</a>
+            <a href="#nearby" class="nav-link">Nearby Places</a>
+            <a href="#seva" class="nav-link">Sevas</a>
+            <a href="#sanatan" class="nav-link">Sanatan Goswami</a>
+            <a href="#management" class="nav-link">Management</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </div>
+</nav>
+
+  
+  
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    menuToggle.addEventListener("click", function (event) {
+        navMenu.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+        event.stopPropagation();
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+            navMenu.classList.remove("active");
+            menuToggle.classList.remove("active");
+        }
+    });
+});
+
+</script>
+
+  <!-- Combined Hero Section with Shlok and Carousel -->
+  <section class="home" id="home">
+    <main>
+      <section class="main-section">
+        <div class="overlay"></div>
+        <div class="main-content">
+            <div class="main-details">
+              <h2 class="main-title">Welcome to Our Sacred Temple!</h2>
+              <p class="main-desc">नंद गोप गृहे जाता, यशोदा गर्भ सम्भवा। <br>
+                ततस्तौ नाशयिष्यामि, विंध्याचल निवासिनी।।</p>
+            </div>
+        </div>
+        <!-- <div class="main-img">
+          <img src="Home.jpg" alt="Home img" class="main-image" height="500px" width="500px">
+        </div> -->
+      </section>
+    </main>
+    <div class="carousel">
+        <div class="group">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+        <div aria-hidden class="group">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="heading">
+        <!-- <h1 class="abouthead">A Glimpse into the Divine Legacy</h1> -->
+         <h2 id="abouthead">A Glimps into the Divine Legacy</h2>
+    </div>
+      <div class="about-content">
+        <p>
+          <b>योगमाया जन्मस्थान</b> श्री कृष्ण के जन्म के बाद का सबसे पहला स्थान है। जहाँ महारानी योगमाया का माता यशोधा के गर्भ से प्राकट्य हुआ है तथा मथुरा में श्री कृष्ण के जन्म के बाद वासुदेव उन्हें गोकुल लेकर आए और अपने मित्र नन्द के घर सुला कर एवं योगमाया को अपने साथ कंस के कारागार वापस ले आए।
+          <br><b>महावन में आज भी महाराज नंद के उस 5250 वर्ष पुराने किले के थोड़े अवशेष बाकी हैं</b> जिसमें प्राचीन सोबर कोठरी जहाँ माता यशोदा ने कृष्ण को पहली बार पालना झुलाया है एवं किले की कुछ पुरानी दीवारें हैं जो कि इस समय पंडित संदीप मिश्र की देख रेख में हैं।
+        </p>
+        <p>
+          नीचे दी गई लोकेशन से मंदिर ओर उसकी प्राचीनता तक पहुंचा जा सकता है ब्रज में ऐसे कुछ ही मंदिर शेष हैं। <br>
+          <b>Temple Timing: 7AM to 7PM</b>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section with Half Description and Half Map -->
+  <section id="location" class="location-section">
+    <div class="container location-container">
+      <h2 class="location-heading">Temple Location</h2>
+      <div class="location-content">
+        <div class="location-description">
+          <p>This temple is in Mahaban (Gokul) tehsil near Mathura. This is the ancient temple of Mata Yogmaya. 
+            This temple is near Chaurasi Khamba temple and Ramanareti.</p>
+        </div>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.9746428587937!2d77.7154919755001!3d27.438900976337443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39737712400c3441%3A0xc182c9e6ae59ac6e!2sShri%20Yog%20Maya%20Janam%20Sthan%2C%20Gokul!5e0!3m2!1sen!2sin!4v1738655001937!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nearby Places -->
+  <section id="nearby" class="nearby-section">
+    <div class="container">
+      <h2 class="nearby-heading">Nearby Places to Visit</h2>
+      <div class="places-grid">
+        <div class="place-card">
+          <img src="Chintaharan Mahadev.jpg" alt="Chintaharan mahadev" />
+          <div class="place-info">
+            <h3>Chintaharan Mahadev</h3>
+            <p>Dedicated to Lord Shiva and houses the unique Shivlinga placed in the centre sanctum.</p>
+          </div>
+        </div>
+        <div class="place-card">
+          <img src="Chaurasi Khamba2.jpg" alt="Ancient Shrine" />
+          <div class="place-info">
+            <h3>Chaurasi Khamba</h3>
+            <p>Chaurasi Khamba Temple is an ancient temple known for its 84 intricately carved pillars, showcasing stunning architectural craftsmanship.</p>
+          </div>
+        </div>
+        <div class="place-card">
+          <img src="Raman Reti2.jpg" alt="Meditation Center" />
+          <div class="place-info">
+            <h3>Ramanreti</h3>
+            <p>Raman Reti is a sacred sand area in Mahaban, believed to be the divine playground of Lord Krishna during his childhood pastimes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="seva-cont">
+    <div class="seva-container" id="seva">
+      <h2 class="seva-head">Seva We Can Offer</h2>
+      <div class="seva-grid">
+        <div class="seva-item">
+          <img src="56-Bhog-Seva.jpg" alt="56-Bhog" class="seva-img">
+          <h3 class="seva-heading">56-Bhog Seva</h3>
+        </div>
+        <div class="seva-item">
+          <img src="Makhan-Mishri-Seva.jpg" alt="Makhan-Mishri-Seva" class="seva-img">
+          <h3 class="seva-heading">Makhan Mishri Seva</h3>
+        </div>
+
+        <div class="seva-item">
+          <img src="Poshak-Seva.jpg" alt="Poshak-Seva" class="seva-img">
+          <h3 class="seva-heading">Poshak Seva</h3>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="sanatan-goswami" id="sanatan">
+    <div class="sanatan-overlay"></div>
+    <div class="sanatan-content">
+        <div class="text">
+            <!-- <img src="Kutiya-Section.jpg" alt="Lotus Icon" class="icon"> -->
+            <h1 class="sanatan-heading">Sanatan Goswami</h1>
+            <p class="sanatan-desc">
+              महावन में योगमाया जन्मस्थान पर प्राचीन सनातन गोस्वामी जी की भजन कुटी का दर्शन है।
+
+              श्री सनातन गोस्वामी 1488 में श्री रूप गोस्वामी से पांच साल पहले बंगाल के एक सारस्वत ब्राह्मण परिवार में प्रकट हुए थे। सनातन और उनके दो भाई, रूप और अनुपमा, बचपन से ही भाव भक्ति में लीन रहते थे। वृंदावन को याद करते हुए, उन्होंने जंगलों का नाम रखा जिसे वे ब्रज  के बारह वनों (तलवन, मधुवन, काम्यवन, महावन) के नाम से जाना जाता है। 
+              
+            </p>
+            <p class="sanatan-desc-2">
+      श्री चैतन्य महाप्रभु ने श्री रूपा और सनातन गोस्वामियों को वृंदावन जाने और चार सेवाएँ करने का आदेश दिया: <br>
+      (1) श्री कृष्ण की लीला स्थलों को उजागर करें। <br>
+      (2) देवताओं की स्थापना करें, उनकी पूजा की व्यवस्था करें। <br>
+      (3) भक्ति ग्रंथों का संकलन करें। <br>
+      (4) भक्ति जीवन के नियमों का प्रचार करें। <br>
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="Sanatan Goswami.jpg" alt="Sanatan Goswami" class="sanatan-image">
+        </div>
+    </div>
+  </section>
+
+  <!-- Temple Management with Sideways Layout -->
+  <section id="management" class="management-section">
+    <div class="container">
+      <h2 class="management-heading">Temple Management</h2>
+      <div class="management-content">
+        <img src="Uncle Ji.jpg" alt="Temple Priest" class="priest-photo" />
+        <div class="management-info">
+          <h3>पंडित संदीप मिश्र</h3>
+          <div class="contact-details">
+            <pre><i data-lucide="phone"></i> +91-6397318874</pre>
+            <p><i data-lucide="mail"></i> yogmayamandir512@gmail.com</p>
+            <p><i data-lucide="map-pin"></i>Paniya Dhaal, Mahaban, Mathura - 281305</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="form-head">Contact Us</h2>
+      <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <input type="hidden" name="access_key" value="992210f8-c9fb-4809-87cd-bc4a5d5df3de">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2024 Yogmaya Maiya Temple. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
