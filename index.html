@@ -41,9 +41,9 @@
         <a href="#location" class="nav-link">Location</a>
         <a href="#nearby" class="nav-link">Nearby Places</a>
         <a href="#seva" class="nav-link">Sevas</a>
+        <a href="#payment" class="nav-link">Payment</a>
         <a href="#sanatan" class="nav-link">Sanatan Goswami</a>
         <a href="#management" class="nav-link">Management</a>
-        <a href="#payment" class="nav-link">Payment</a>
         <a href="#contact" class="nav-link">Contact</a>
       </div>
     </div>
@@ -192,6 +192,19 @@
   </div>
   </section>
 
+  <div class="donation-container" id="payment">
+    <h2 class="donation-head">Seva to Yogmaya Mandir</h2>
+    <p class="donation-desc">If you want to give any seva scan the QR-Code.</p>
+    <img src="QR-Code.jpg" alt="Donation QR Code" class="qr-code">
+    <button onclick="processPayment()">Pay Now</button>
+</div>
+
+<script>
+    function processPayment() {
+        alert("Please scan the QR code to complete your donation.");
+    }
+</script>
+
   <section class="sanatan-goswami" id="sanatan">
     <div class="sanatan-overlay"></div>
     <div class="sanatan-content">
@@ -236,7 +249,7 @@
     </div>
   </section>
 
-  <div class="donation-container" id="payment">
+  <!-- <div class="donation-container" id="payment">
     <h2 class="donation-head">Seva to Yogmaya Mandir</h2>
     <p class="donation-desc">If you want to give any seva scan the QR-Code.</p>
     <img src="QR-Code.jpg" alt="Donation QR Code" class="qr-code">
@@ -247,7 +260,7 @@
     function processPayment() {
         alert("Please scan the QR code to complete your donation.");
     }
-</script>
+</script> -->
 
   <!-- Contact Form -->
   <section id="contact" class="contact-section">
