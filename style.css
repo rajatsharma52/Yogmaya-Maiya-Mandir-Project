@@ -579,6 +579,11 @@
     font-family: "Noto Sans Cherokee", serif;
 }
 
+.seva-amount{
+  color: black;
+  text-shadow: 1px 1px rgb(239, 230, 213);
+}
+
 .sanatan-goswami {
     position: relative;
     width: 100%;
@@ -774,6 +779,59 @@
     align-items: center;
     gap: 0.5rem;
   }
+
+  .donation-container {
+    background: white;
+    padding: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    /* padding-bottom: 3rem; */
+}
+.donation-container .donation-head {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.donation-container .donation-desc{
+  text-align: center;
+  font-weight: bold;
+}
+.qr-code {
+    width: 350px;
+    margin: 10px 0;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 480px) {
+  .donation-container {
+      padding: 15px;
+      width: 90%;
+  }
+  button {
+      font-size: 16px;
+      padding: 10px;
+  }
+  .qr-code {
+    width: 300px;
+    margin: 10px 0;
+  }
+}
   
   /* Contact Form */
   .contact-form {
